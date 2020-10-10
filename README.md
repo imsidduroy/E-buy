@@ -61,7 +61,6 @@
    10. create route for /api/products
    11. return products
    12. run npm start
-
 10. Load Products From Backend
     1. edit HomeScreen.js
     2. define products, loading and error.
@@ -72,15 +71,13 @@
     7. show them in the list
     8. create Loading Component
     9. create Message Box Component
-    10. use them in HomeScreen  
-
+    10. use them in HomeScreen
 11. Install ESlint For Code Linting
     1. install VSCode eslint extension
     2. npm install -D eslint
     3. run ./node_modules/.bin/eslint --init
     4. Create ./frontend/.env
-    5. Add SKIP_PREFLIGHT_CHECK=true    
-
+    5. Add SKIP_PREFLIGHT_CHECK=true
 12. Add Redux to Home Screen
     1. npm install redux react-redux
     2. Create store.js
@@ -92,35 +89,29 @@
     8. const dispatch = useDispatch()
     9. useEffect(()=>dispatch({type: LOAD_PRODUCTS, payload: data})
     10. Add store to index.js
-
 13. Add Redux to Product Screen
     1. create product details constants, actions and reducers
     2. add reducer to store.js
     3. use action in ProductScreen.js
-    4. add /api/product/:id to backend api  
-
+    4. add /api/product/:id to backend api
 14. Handle Add To Cart Button
     1. Handle Add To Cart in ProductScreen.js
     2. create CartScreen.js
-
 15. Implement Add to Cart Action
     1. create addToCart constants, actions and reducers
     2. add reducer to store.js
     3. use action in CartScreen.js
-    4. render cartItems.length      
-
+    4. render cartItems.length
 16. Build Cart Screen
     1. create 2 columns for cart items and cart action
     2. cartItems.length === 0 ? cart is empty
     3. show item image, name, qty and price
     4. Proceed to Checkout button
     5. Implement remove from cart action
-
 17. Implement Remove From Cart Action
     1. create removeFromCart constants, actions and reducers
     2. add reducer to store.js
-    3. use action in CartScreen.js    
-
+    3. use action in CartScreen.js
 18. Create Sample Users In MongoDB
     1. npm install mongoose
     2. connect to mongodb
@@ -129,7 +120,10 @@
     5. export MONGODB_URL
     6. create models/userModel.js
     7. create userSchema and userModel
-    8. create models/productModel.js
-    9. create productSchema and productModel
-    10. create userRoute
-    11. Seed sample data    
+    8. create userRoute
+    9. Seed sample data
+19. Create Sample Products In MongoDB
+    1. create models/productModel.js
+    2. create productSchema and productModel
+    3. create productRoute
+    4. Seed sample data
