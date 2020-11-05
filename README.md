@@ -1,15 +1,13 @@
-# Amazona ECommerce Website
+# E-buy ECommerce Website
 
-1. Introduction to this course
-   1. what you will build
-   2. what you will learn
-   3. who are audiences
+1. Introduction to this project.
+   1. MERN-app.
 2. Install Tools
    1. Code Editor
    2. Web Browser
    3. VS Code Extension
 3. Website Template
-   1. Create amazona folder
+   1. Create E-buy folder
    2. create template folder
    3. create index.html
    4. add default HTML code
@@ -143,7 +141,7 @@
 22. Implement SignIn Action
     1. create signin constants, actions and reducers
     2. add reducer to store.js
-    3. use action in SigninScreen.js    
+    3. use action in SigninScreen.js
 23. Create Register Screen
     1. create API for /api/users/register
     2. insert new user to database
@@ -153,7 +151,7 @@
     6. Style fields
     7. Add screen to App.js
     8. create register action and reducer
-    9. check validation and create user    
+    9. check validation and create user
 24. Create Shipping Screen
     1. create CheckoutSteps.js component
     2. create shipping fields
@@ -168,4 +166,4 @@
     1. createOrder api
     2. create orderModel
     3. create orderRouter
-    4. create post order route    
+    4. create post order route
