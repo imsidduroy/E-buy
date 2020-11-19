@@ -167,3 +167,79 @@
     2. create orderModel
     3. create orderRouter
     4. create post order route
+28. Implement PlaceOrder Action
+    1. handle place order button click
+    2. create place order constants, action and reducer
+29. Create Order Screen
+    1. build order api for /api/orders/:id
+    2. create OrderScreen.js
+    3. dispatch order details action in useEffect
+    4. load data with useSelector
+    5. show data like place order screen
+    6. create order details constant, action and reducer
+30. Add PayPal Button
+    1. get client id from paypal
+    2. set it in .env file
+    3. create route form /api/paypal/clientId
+    4. create getPaypalClientID in api.js
+    5. add paypal checkout script in OrderScreen.js
+    6. show paypal button
+31. Implement Order Payment
+    1. update order after payment
+    2. create payOrder in api.js
+    3. create route for /:id/pay in orderRouter.js
+    4. rerender after pay order
+32. Display Orders History
+    1. create customer orders api
+    2. create api for getMyOrders
+    3. show orders in profile screen
+    4. style orders
+33. Display User Profile
+    1. create user details api
+    2. show user information
+34. Update User Profile
+    1. create user update api
+    2. update user info
+35. Create Admin View
+    1. Create Admin Menu
+    2. Create Admin Middleware in Backend
+    3. Create Admin Route in Frontend
+36. List Products
+    1. Create Product List Screen
+    2. Add reducer to store
+    3. show products on the screen
+37. Create Product
+    1. build create product api
+    2. build Create Product button
+    3. define product create constant, action and reducer
+    4. use action in Product List Screen
+38. Build Product Edit Screen
+    1. create edit screen
+    2. define state
+    3. create fields
+    4. load product details
+    5. add to routes
+39. Update Product
+    1. define update api
+    2. define product update constant, action and reducer
+    3. use action in Product Edit Screen
+40. Upload Product Image
+    1. npm install multer
+    7. define upload router
+    8. create uploads folder 
+    9. Handle frontend
+41. Delete Product
+    1.  create delete api in backend
+    2.  create delete constants, action and reducer
+    3.  use it in product list screen
+42. List Orders
+    1. create order list api
+    2. create Order List Screen
+    3. Add reducer to store
+    4. show products on the screen
+43. Delete Order
+    2. create delete order action and reducer
+    3. add order delete action to order list
+44. Deliver Order
+    1. create constant, actions and reducers for deliver order
+    2. add order deliver action to order details screen    
