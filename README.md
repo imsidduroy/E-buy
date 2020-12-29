@@ -64,3 +64,8 @@ $ npm start
 
 - Run http://localhost:3000/signin
 - Enter admin email and password and click signin
+
+### 7. Upcoming Features
+
+- Google Maps intergration
+
