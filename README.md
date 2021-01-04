@@ -1,5 +1,5 @@
 # E-Buy ECommerce Website
-![amazona](/template/images/e-buy.jpg)
+![e-buy](/template/images/e-buy.png)
 
 An e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
