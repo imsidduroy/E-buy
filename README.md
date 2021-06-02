@@ -22,7 +22,7 @@ An e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 ### 1. Clone repo
 
 ```
-$ git clone 
+$ git clone https://github.com/imsidduroy/e-buy.git
 $ cd e-buy
 ```
 
