@@ -37,16 +37,23 @@ productRouter.get(
         ? { rating: -1 }
         : { _id: -1 };
 
-    const products = await Product.find({
-      ...sellerFilter,
-      ...nameFilter,
-      ...categoryFilter,
-      ...priceFilter,
-      ...ratingFilter,
-    })
-      .populate("seller", "seller.name seller.logo")
-      .sort(sortOrder);
-    res.send(products);
+      try{
+        console.log("called")
+          const products = await Product.find({
+            // ...sellerFilter,
+            // ...nameFilter,
+            // ...categoryFilter,
+            // ...priceFilter,
+            // ...ratingFilter,
+          })
+            .populate("seller", "seller.name seller.logo")
+            .sort(sortOrder);
+            console.log(products);
+            res.send(products);
+        }
+      catch(err){
+          console.error(err);
+      }
   })
 );
 

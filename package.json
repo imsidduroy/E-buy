@@ -8,7 +8,7 @@
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Siddu Roy",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
