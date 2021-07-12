@@ -55,7 +55,15 @@ userRouter.post(
       email: req.body.email,
       password: bcrypt.hashSync(req.body.password, 8),
     });
+
+    //Check if user with same email already exists.
+    const dupuser =  await User.find({email : req.body.email})
+    if(dupuser){
+        throw new Error("Email already exists")
+    }
+
     try{
+      console.log("came")
       const createdUser = await user.save();
       res.send({
         _id: createdUser._id,
@@ -66,7 +74,7 @@ userRouter.post(
         token: generateToken(createdUser),
       });
     }catch(err){
-      console.error(err)
+      throw new Error(err.message);
     }
   })
 );
