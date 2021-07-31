@@ -40,11 +40,11 @@ productRouter.get(
       try{
         console.log("called")
           const products = await Product.find({
-            // ...sellerFilter,
-            // ...nameFilter,
-            // ...categoryFilter,
-            // ...priceFilter,
-            // ...ratingFilter,
+            ...sellerFilter,
+            ...nameFilter,
+            ...categoryFilter,
+            ...priceFilter,
+            ...ratingFilter,
           })
             .populate("seller", "seller.name seller.logo")
             .sort(sortOrder);

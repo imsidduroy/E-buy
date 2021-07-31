@@ -17,6 +17,20 @@ const data = {
       },
     },
     {
+      name: "Dhoni",
+      email: "dhoni@example.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+      isSeller: true,
+      seller: {
+        name: "Lee",
+        logo: "/images/logo2.png",
+        description: "best seller",
+        rating: 4.6,
+        numReviews: 150,
+      },
+    },
+    {
       name: "John",
       email: "user@example.com",
       password: bcrypt.hashSync("1234", 8),
