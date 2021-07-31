@@ -36,6 +36,7 @@ export const listProducts = ({
     type: PRODUCT_LIST_REQUEST,
   });
   try {
+    console.log("Product list request")
     const { data } = await Axios.get(
       `/api/products?seller=${seller}&name=${name}&category=${category}&min=${min}&max=${max}&rating=${rating}&order=${order}`
     );
