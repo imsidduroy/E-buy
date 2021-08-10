@@ -5,7 +5,7 @@ An e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
 ## Demo Website
 
-- 👉 Heroku : https://evening-mesa-78762.herokuapp.com/
+- 👉 Heroku : https://e-buy-website.herokuapp.com/
 
 ## Development Tools
 
@@ -55,9 +55,9 @@ $ npm start
 
 ### 5. Seed Users and Products
 
-- Run this on chrome: http://localhost:5000/api/users/seed
+- Run this on chrome: http://localhost:8000/api/users/seed
 - It returns admin email and password
-- Run this on chrome: http://localhost:5000/api/products/seed
+- Run this on chrome: http://localhost:8000/api/products/seed
 - It creates 6 sample products
 
 ### 6. Admin Login
